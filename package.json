@@ -1,0 +1,23 @@
+{
+  "name": "template_4",
+  "version": "1.0.0",
+  "description": "Learning project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PavelNovik/template_4.git"
+  },
+  "author": "PawelNowik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PavelNovik/template_4/issues"
+  },
+  "homepage": "https://github.com/PavelNovik/template_4#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.55.0"
+  }
+}
