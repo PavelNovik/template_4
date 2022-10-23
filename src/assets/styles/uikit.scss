@@ -1,0 +1,23 @@
+@import './utils';
+@import './components';
+@import './layouts';
+
+.header__logo {
+    font-family: $logoFont;
+    font-size: 8.8rem;
+    color: #d03958;
+}
+
+.header__title {
+    font-family: $titleFont;
+    font-size: 9rem;
+}
+
+.main__title {
+    font-family: $mainTitleFont;
+    font-size: 5rem;
+}
+
+.colorize {
+    color: #d03958;
+}

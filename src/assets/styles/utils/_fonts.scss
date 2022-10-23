@@ -1,0 +1,28 @@
+// Title font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'couturebold';
+    src: url('../fonts/couture-bld-webfont.woff2') format('woff2'),
+        url('../fonts/couture-bld-webfont.woff') format('woff'),
+        url('../fonts/couture-bld-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+// Main font
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+// Logo font
+
+@font-face {
+    font-family: 'quite_chocolateyregular';
+    src: url('../fonts/quite_chocolatey-webfont.woff2') format('woff2'),
+        url('../fonts/quite_chocolatey-webfont.woff') format('woff'),
+        url('../fonts/Quite_Chocolatey.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+
+}
