@@ -1,11 +1,10 @@
 .header__navigation {
   list-style: none;
   display: flex;
-  width: 8rem;
   gap: 1rem;
   padding: 0;
 
-  & > .active {
+  &>.active {
     border: 1px solid $title__text_red;
     color: $main__text_white;
     background-color: $title__text_red;

@@ -3,39 +3,44 @@
 @import './layouts';
 
 body {
-  margin: 2rem;
+    margin: 2rem;
 }
 
 .header__logo {
-  font-family: $logoFont;
-  font-size: $logo__size;
-  color: $title__text_red;
+    font-family: $logoFont;
+    font-size: $logo__size;
+    color: $title__text_red;
 }
 
 .header__title {
-  font-family: $titleFont;
-  font-size: $header__title_size;
+    font-family: $titleFont;
+    font-size: $header__title_size;
 }
 
 .main__title {
-  @include title__text;
+    @include title__text;
 }
 
 .colorize {
-  color: $title__text_red;
+    color: $title__text_red;
 }
 
 .header__text {
-  @include article__text;
+    @include article__text;
 }
 
 .form__text {
-  @include article__text($main__text_size, $form__text_color);
+    @include article__text($main__text_size, $form__text_color);
 }
 
 .divider {
-  font-family: $main__title_size;
-  color: $form__text_color;
-  font-size: 4rem;
-  padding-bottom: 2rem;
+    font-family: $main__title_size;
+    color: $form__text_color;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+}
+
+.header__navigation {
+
+    width: 8rem;
 }

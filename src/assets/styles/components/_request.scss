@@ -6,11 +6,13 @@
   height: 52rem;
   border-radius: 5.2px;
   background-color: $title__text_red;
+
   .form__title {
     @include title__text(2.2rem, $main__text_white, $titleFont);
     text-align: center;
     margin-bottom: 3.7rem;
   }
+
   .input {
     &__form {
       @include inputs__forms;
@@ -18,13 +20,23 @@
       font-size: 2rem;
       padding-left: 2rem;
       margin-bottom: 1.6rem;
+      outline: none;
+
       &:nth-child(5) {
         margin-bottom: 0;
       }
+
+      &:focus {
+        &::placeholder {
+          opacity: 1;
+        }
+      }
+
       &::placeholder {
         opacity: 0.5;
       }
     }
+
     &__btn {
       @include inputs__forms($titleFont, $title__text_black, $main__text_white);
       text-transform: uppercase;
@@ -38,6 +50,7 @@
       font-family: $mainFont;
       margin-top: 2.5rem;
       margin-bottom: 2rem;
+
       input {
         width: 19px;
         height: 18px;

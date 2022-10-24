@@ -9,10 +9,53 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  &__name {
+    @include article__text(2.2rem, $title__text_black);
+    margin-top: 3.7rem;
+  }
+
+  &__description {
+    &_list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+
+      &-item {
+        @include article__text(2rem, $title__text_black);
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  &__btn {
+    @include title__text (2.2rem, $title__text_black, $titleFont);
+    width: 20.5rem;
+    height: 4.9rem;
+    border: none;
+    background-color: #e3d5b8;
+
+    font-weight: 510;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+
+
+    &:hover {
+      background-color: $title__text_red;
+      color: $main__text_white;
+
+    }
+  }
+
+
   &__hot {
     width: 150px;
     height: 100px;
-    background-color: rgba(248, 137, 34, 0.774);
+    background-color: #b4a993;
     position: absolute;
     font-family: $mainFont;
     font-size: 1.5rem;
@@ -23,6 +66,7 @@
     left: -6.5rem;
     top: -3.5rem;
   }
+
   &__cost {
     @include title__text(6rem, $title__text_red, $titleFont);
     font-weight: bold;

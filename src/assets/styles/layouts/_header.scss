@@ -1,0 +1,47 @@
+.header {
+    width: 100%;
+    height: 74rem;
+    background: url(../images/group-1.webp);
+    background-size: cover;
+    position: relative;
+    padding: 1rem 2rem 0.5rem 2rem;
+
+
+    &__container {
+        background-color: #e3d5b8;
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4rem 10rem 1rem 10rem;
+
+        }
+
+
+    }
+
+    &__logo {
+        font-family: $logoFont;
+        font-size: $logo__size;
+        color: $title__text_red;
+
+    }
+
+    &__title {
+        font-family: $titleFont;
+        font-size: $header__title_size;
+    }
+
+    &__text {
+        @include article__text;
+        opacity: 1;
+    }
+}
+
+.colorize {
+    color: $title__text_red;
+}
