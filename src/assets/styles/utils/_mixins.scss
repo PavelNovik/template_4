@@ -1,0 +1,30 @@
+@mixin article__text($fs: $main__text_size, $color: $stage__title_text) {
+  font-family: $mainFont;
+  font-size: $fs;
+  color: $color;
+}
+@mixin title__text(
+  $fs: $main__title_size,
+  $color: $title__text_black,
+  $ff: $mainTitleFont
+) {
+  font-family: $ff;
+  font-size: $fs;
+  color: $color;
+  text-transform: uppercase;
+}
+
+@mixin inputs__forms(
+  $ff: $mainFont,
+  $bgc: $main__text_white,
+  $color: $form__text_color
+) {
+  font-family: $ff;
+  background-color: $bgc;
+  color: $color;
+  width: 35.3rem;
+  height: 5.7rem;
+
+  border: none;
+  border-radius: 5.2px;
+}
