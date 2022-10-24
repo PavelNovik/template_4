@@ -1,0 +1,30 @@
+.price {
+  width: 31.8rem;
+  height: 38.9rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  &__hot {
+    width: 150px;
+    height: 100px;
+    background-color: rgba(248, 137, 34, 0.774);
+    position: absolute;
+    font-family: $mainFont;
+    font-size: 1.5rem;
+    color: $title__text_black;
+    text-align: center;
+    padding-top: 7rem;
+    rotate: -45deg;
+    left: -6.5rem;
+    top: -3.5rem;
+  }
+  &__cost {
+    @include title__text(6rem, $title__text_red, $titleFont);
+    font-weight: bold;
+  }
+}

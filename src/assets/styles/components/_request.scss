@@ -29,6 +29,7 @@
       @include inputs__forms($titleFont, $title__text_black, $main__text_white);
       text-transform: uppercase;
       font-size: 2.2rem;
+      cursor: pointer;
     }
 
     &__chbx {
