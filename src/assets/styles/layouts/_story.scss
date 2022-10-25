@@ -1,0 +1,31 @@
+.story {
+    background-color: $title__text_red;
+    border-radius: 5px;
+    height: 12rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 6rem;
+
+    &__article {
+        width: 65rem;
+
+        p {
+            @include article__text(2rem, $main__text_white);
+        }
+    }
+
+    &__btn {
+        @include title__text(2.2rem, $title__text_black, $titleFont);
+        width: 269px;
+        height: 64px;
+        border: none;
+        border-radius: 5px;
+        background-color: #e3d5b8;
+        text-transform: uppercase;
+        font-weight: 510;
+        cursor: pointer;
+
+    }
+}

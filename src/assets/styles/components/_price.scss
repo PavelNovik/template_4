@@ -1,7 +1,8 @@
 .price {
+  background-color: $main__text_white;
   width: 31.8rem;
   height: 38.9rem;
-  border: 1px solid black;
+  // border: 1px solid black;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
@@ -13,6 +14,7 @@
   &__name {
     @include article__text(2.2rem, $title__text_black);
     margin-top: 3.7rem;
+    text-transform: capitalize;
   }
 
   &__description {
