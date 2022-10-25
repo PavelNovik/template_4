@@ -1,50 +1,57 @@
 .header {
+  width: 100%;
+  height: 74rem;
+  background: url(../images/group-1.webp);
+  background-size: cover;
+  position: relative;
+  padding: 1rem 2rem 0.5rem 2rem;
+  position: relative;
+
+  &__container {
+    background-color: rgba($color: #e3d5b8, $alpha: 0.7);
     width: 100%;
-    height: 74rem;
-    background: url(../images/group-1.webp);
-    background-size: cover;
-    position: relative;
-    padding: 1rem 2rem 0.5rem 2rem;
+    height: 100%;
+    opacity: 1;
 
-
-    &__container {
-        background-color: rgba($color: #e3d5b8, $alpha: 0.7);
-        width: 100%;
-        height: 100%;
-        opacity: 1;
-
-        .navigation {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 4rem 10rem 1rem 10rem;
-
-        }
-
-        .title {
-            width: 49rem;
-        }
-
+    .navigation {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 10rem 1rem 10rem;
     }
 
-    &__logo {
-        font-family: $logoFont;
-        font-size: $logo__size;
-        color: $title__text_red;
-
+    .title {
+      margin-top: 11rem;
+      width: 49rem;
+      margin-left: 9rem;
     }
+  }
 
-    &__title {
-        font-family: $titleFont;
-        font-size: $header__title_size;
-    }
+  &__logo {
+    font-family: $logoFont;
+    font-size: $logo__size;
+    color: $title__text_red;
+  }
 
-    &__text {
-        @include article__text;
-        opacity: 1;
-    }
+  &__title {
+    font-family: $titleFont;
+    font-size: $header__title_size;
+    line-height: 8rem;
+    letter-spacing: -1.77px;
+    margin-bottom: 7rem;
+  }
+
+  &__text {
+    @include article__text;
+  }
 }
 
 .colorize {
-    color: $title__text_red;
+  color: $title__text_red;
+}
+
+.form__container {
+  position: absolute;
+  top: 29rem;
+  left: 77rem;
 }

@@ -1,0 +1,17 @@
+.main__title {
+  @include title__text;
+}
+
+.service {
+  &__title {
+    margin-top: 3rem;
+    margin-left: 12rem;
+    margin-bottom: 8rem;
+  }
+
+  &__icons {
+    display: flex;
+    padding: 0 4rem;
+    justify-content: space-around;
+  }
+}

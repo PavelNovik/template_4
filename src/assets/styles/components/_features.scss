@@ -1,15 +1,24 @@
 .feature {
   width: 17rem;
-  border: 1px solid #e3d5b8;
+  // border: 1px solid #e3d5b8;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   .image {
-    width: 16.3rem;
-    height: 14.3rem;
-    background-image: url(../images/shape-108.svg);
-    margin-bottom: 4.5rem;
+    @extend %images;
+    &-1 {
+      background-image: url(../images/shape-108.svg);
+    }
+    &-2 {
+      background-image: url(../images/shape-127.svg);
+    }
+    &-3 {
+      background-image: url(../images/shape-106.svg);
+    }
+    &-4 {
+      background-image: url(../images/shape-97.svg);
+    }
   }
 
   .description {
