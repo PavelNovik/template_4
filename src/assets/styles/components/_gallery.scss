@@ -1,0 +1,18 @@
+.gallery {
+  &__icon {
+    width: 10.5rem;
+    height: 10.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 0.2rem;
+    box-shadow: 1px -1px 10px #bbaa89;
+    // position: absolute;
+    left: 38rem;
+
+    &_pic {
+      width: 110%;
+      height: 110%;
+      object-fit: cover;
+    }
+  }
+}

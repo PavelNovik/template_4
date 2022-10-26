@@ -1,0 +1,61 @@
+.communication {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10rem;
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+      margin-bottom: 4rem;
+      h2 {
+        @include title__text($main__title_size, $title__text_black, $titleFont);
+      }
+    }
+    &__review {
+      .review {
+        &:nth-child(2) {
+          background-color: #e3d5b8;
+          margin-top: 3.5rem;
+        }
+      }
+    }
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__field {
+      display: flex;
+      width: 45rem;
+      gap: 3rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    &__icon {
+      cursor: pointer;
+      &:hover {
+        box-shadow: 1px -1px 10px #3d3931;
+      }
+    }
+    &__title {
+      margin-bottom: 4rem;
+      h2 {
+        @include title__text($main__title_size, $title__text_red, $titleFont);
+      }
+    }
+    &__link {
+      margin-top: 3rem;
+      a {
+        text-decoration: none;
+        h3 {
+          @include title__text(2rem, $title__text_red, $titleFont);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

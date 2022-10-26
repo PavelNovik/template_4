@@ -1,32 +1,40 @@
 .review {
-    display: flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 44rem;
+  height: 14rem;
+  position: relative;
 
-    &__text {
-        &_article {
-            @include article__text(1.9rem, $title__text_black);
-            width: 34rem;
-            margin-bottom: 2.3rem;
-        }
-
-        &_author {
-            font-family: $titleFont;
-            color: $title__text_red;
-            font-size: 2rem;
-        }
+  &__text {
+    margin-left: 2.6rem;
+    &_article {
+      @include article__text(1.9rem, $title__text_black);
+      width: 34rem;
+      margin-bottom: 2.3rem;
     }
 
-    &__icon {
-        width: 10.5rem;
-        height: 10.5rem;
-        border-radius: 50%;
-        overflow: hidden;
-        margin-top: 0.2rem;
-        box-shadow: 1px -1px 10px #bbaa89;
-
-        &_pic {
-            width: 110%;
-            height: 110%;
-            object-fit: cover;
-        }
+    &_author {
+      font-family: $titleFont;
+      color: $title__text_red;
+      font-size: 2rem;
     }
+  }
+
+  &__icon {
+    width: 10.5rem;
+    height: 10.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 0.2rem;
+    box-shadow: 1px -1px 10px #bbaa89;
+    position: absolute;
+    left: 38rem;
+
+    &_pic {
+      width: 110%;
+      height: 110%;
+      object-fit: cover;
+    }
+  }
 }
