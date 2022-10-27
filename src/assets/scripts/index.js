@@ -59,3 +59,28 @@ function getDataForm(e) {
 }
 // const reqForm = document.forms.userForm;
 // console.log(reqForm.elements);
+
+const header = document.querySelector('#header');
+const service = document.querySelector('#service');
+const pricing = document.querySelector('#pricing');
+const gallery = document.querySelector('#gallery');
+
+const btn1 = document.querySelector('#btn1');
+const btn2 = document.querySelector('#btn2');
+const btn3 = document.querySelector('#btn3');
+
+btn1.addEventListener('click', function (e) {
+  service.scrollIntoView({ behavior: 'smooth' });
+});
+btn2.addEventListener('click', function (e) {
+  gallery.scrollIntoView({ behavior: 'smooth' });
+});
+btn3.addEventListener('click', function (e) {
+  pricing.scrollIntoView({ behavior: 'smooth' });
+});
+
+footerLogo.addEventListener('click', function (e) {
+  // const setCoords = header.getBoundingClientRect();
+  // console.log(setCoords);
+  header.scrollIntoView({ behavior: 'smooth' });
+});
