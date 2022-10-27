@@ -25,15 +25,13 @@
       &:nth-child(5) {
         margin-bottom: 0;
       }
-
-      &:focus {
-        &::placeholder {
-          opacity: 1;
-        }
-      }
-
       &::placeholder {
         opacity: 0.5;
+      }
+
+      &:focus {
+        opacity: 1;
+        color: $title__text_black;
       }
     }
 
@@ -42,6 +40,10 @@
       text-transform: uppercase;
       font-size: 2.2rem;
       cursor: pointer;
+      &:hover {
+        background-color: $background__stage;
+        color: $title__text_black;
+      }
     }
 
     &__chbx {

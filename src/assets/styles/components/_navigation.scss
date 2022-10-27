@@ -4,7 +4,7 @@
   gap: 1rem;
   padding: 0;
 
-  &>.active {
+  & > .active {
     border: 1px solid $title__text_red;
     color: $main__text_white;
     background-color: $title__text_red;
@@ -14,7 +14,7 @@
     @include title__text(1.8rem, $title__text_black, $titleFont);
     font-weight: 510;
     padding: 0.5rem 1rem;
-    border: 1px solid rgba($color: #e3d5b8, $alpha: 0);
+    border: 1px solid rgba($color: $background__stage, $alpha: 0);
     border-radius: 5px;
     cursor: pointer;
 

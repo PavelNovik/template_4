@@ -1,0 +1,17 @@
+.footer {
+  background-color: $title__text_black;
+  height: 30rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 7rem 14rem;
+  &__text {
+    @include article__text(2rem, $main__text_white);
+    span {
+      color: $title__text_red;
+    }
+  }
+  &__logo {
+    @include title__text(6.5rem, $title__text_red, $logoFont);
+  }
+}
