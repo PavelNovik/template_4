@@ -65,6 +65,8 @@ const service = document.querySelector('#service');
 const pricing = document.querySelector('#pricing');
 const gallery = document.querySelector('#gallery');
 
+const btnHome = document.querySelector('#btnHome');
+const btn0 = document.querySelector('#btn0');
 const btn1 = document.querySelector('#btn1');
 const btn2 = document.querySelector('#btn2');
 const btn3 = document.querySelector('#btn3');
@@ -83,4 +85,23 @@ footerLogo.addEventListener('click', function (e) {
   // const setCoords = header.getBoundingClientRect();
   // console.log(setCoords);
   header.scrollIntoView({ behavior: 'smooth' });
+});
+
+const headerTitle = document.querySelector('.title');
+const headerTitleContent = headerTitle.innerHTML;
+const aboutUs = `
+<h2 class="header__title"><span class="colorize">About </span>us</h2>
+                    <p class="header__text">Our company work at the world market about 30 years. And all this time we help to the all people, which was our clients. Now our direction is in the computer systems for every country and every person in the world. If you have some questions about us you can connect whith us in the contacts part of this web.</p>
+`;
+btn0.addEventListener('click', function () {
+  headerTitle.innerHTML = aboutUs;
+  btn0.classList.toggle('active');
+  btnHome.classList.toggle('active');
+  // console.log(headerTitleContent);
+});
+btnHome.addEventListener('click', function () {
+  headerTitle.innerHTML = headerTitleContent;
+  btnHome.classList.toggle('active');
+  btn0.classList.toggle('active');
+  // console.log(headerTitleContent);
 });
